@@ -66,6 +66,21 @@ var i10n = {
 
 Each property holds an array containing the singular and the plural-suffix.
 
+Here is an example of a Lingala localization:
+
+``` js
+var lingala = {
+  milliSeconds: ['milisɛkɔ́ndɛ', ''],
+  seconds: ['sɛkɔ́ndɛ', ''],
+  minutes: ['miníti', ''],
+  hours: ['ngonga', ''],
+  days: ['mɔ́kɔlɔ', ''],
+  weeks: ['mpɔ́sɔ', ''],
+  months: ['sánzá', ''],
+  years: ['mbúla', '']
+};
+```
+
 If you don't need to specify the `to`-parameter, you can pass in the localization as second parameter:
 
 ``` js
