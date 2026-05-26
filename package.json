@@ -1,24 +1,35 @@
 {
-    "name": "elapsed",
-    "version": "0.0.7",
-    "description": "A module for getting the elapsed time between two dates in various representation.",
-    "main": "index.js",
-    "dependencies": {},
-    "keywords": [
-        "elapsed",
-        "time",
-        "date",
-        "browserify",
-        "interval"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/gerhardberger/elapsed.git"
-    },
-    "homepage": "https://github.com/gerhardberger/elapsed",
-    "author": {
-        "name": "Gerhard Berger",
-        "email": "93.morph@gmail.com",
-        "url": "https://twitter.com/gerhard_berger"
-    }
+  "name": "elapsed",
+  "version": "1.0.0",
+  "description": "A module for getting the elapsed time between two dates in various representation.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "elapsed",
+    "time",
+    "date",
+    "browserify",
+    "interval"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gerhardberger/elapsed.git"
+  },
+  "homepage": "https://github.com/gerhardberger/elapsed",
+  "author": {
+    "name": "Gerhard Berger",
+    "email": "93.morph@gmail.com",
+    "url": "https://twitter.com/gerhard_berger"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  }
 }
