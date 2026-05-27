@@ -25,6 +25,37 @@ console.log(elapsedTime.years.text);
 
 console.log(elapsedTime.optimal);
 
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+	minutes: ['minute', 's'],
+	hours: ['heure', 's'],
+	days: ['jour', 's'],
+	weeks: ['semaine', 's'],
+	months: ['mois', ''],
+	years: ['an', 's']
+};
+
+var frenchElapsedTime = new Elapsed(then, now, french);
+
+console.log(frenchElapsedTime.milliSeconds.text);
+
+console.log(frenchElapsedTime.seconds.text);
+
+console.log(frenchElapsedTime.minutes.text);
+
+console.log(frenchElapsedTime.hours.text);
+
+console.log(frenchElapsedTime.days.text);
+
+console.log(frenchElapsedTime.weeks.text);
+
+console.log(frenchElapsedTime.months.text);
+
+console.log(frenchElapsedTime.years.text);
+
+console.log(frenchElapsedTime.optimal);
+
 var german = {
   milliSeconds: ['millisekunde', 'n'],
   seconds: ['Sekunde', 'n'],
