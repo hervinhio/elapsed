@@ -9,6 +9,19 @@ var l10nDefaults = {
 	, years: ['year', 's']
 };
 
+var l10nFrench = {
+  milliSeconds: ['milliseconde', 's']
+  , seconds: ['seconde', 's']
+	, minutes: ['minute', 's']
+	, hours: ['heure', 's']
+	, days: ['jour', 's']
+	, weeks: ['semaine', 's']
+	, months: ['mois', '']
+	, years: ['an', 's']
+};
+
+module.exports.l10nFrench = l10nFrench;
+
 function Elapsed (from, to, l10n) {
 	this.from = from;
 

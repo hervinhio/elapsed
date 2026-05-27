@@ -66,6 +66,16 @@ var i10n = {
 
 Each property holds an array containing the singular and the plural-suffix.
 
+#### French Localization
+
+A French localization object is included and can be accessed via `require('elapsed').l10nFrench`:
+
+``` js
+var Elapsed = require('elapsed');
+var i10n = Elapsed.l10nFrench;
+var elapsedTime = new Elapsed(from, to, i10n);
+```
+
 If you don't need to specify the `to`-parameter, you can pass in the localization as second parameter:
 
 ``` js
