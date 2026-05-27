@@ -72,3 +72,18 @@ If you don't need to specify the `to`-parameter, you can pass in the localizatio
 var i10n = {…};
 var elapsedTime = new Elapsed(from, i10n);
 ```
+
+Here is a French translation example:
+
+``` js
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+  minutes: ['minute', 's'],
+  hours: ['heure', 's'],
+  days: ['jour', 's'],
+  weeks: ['semaine', 's'],
+  months: ['mois', ''],
+  years: ['année', 's']
+};
+```
