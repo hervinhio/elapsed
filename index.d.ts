@@ -1,4 +1,7 @@
 export = Elapsed;
+declare namespace Elapsed {
+    export { Elapsed, l10nFrench };
+}
 declare function Elapsed(from: any, to: any, l10n: any, ...args: any[]): void;
 declare class Elapsed {
     constructor(from: any, to: any, l10n: any, ...args: any[]);
@@ -34,3 +37,13 @@ declare class Elapsed {
     optimal: any;
     refresh(to: any): Elapsed;
 }
+declare const l10nFrench: {
+    milliSeconds: string[];
+    seconds: string[];
+    minutes: string[];
+    hours: string[];
+    days: string[];
+    weeks: string[];
+    months: string[];
+    years: string[];
+};

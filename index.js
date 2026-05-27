@@ -20,8 +20,6 @@ var l10nFrench = {
 	, years: ['an', 's']
 };
 
-module.exports.l10nFrench = l10nFrench;
-
 function Elapsed (from, to, l10n) {
 	this.from = from;
 
@@ -91,4 +89,4 @@ Elapsed.prototype.refresh = function(to) {
 	return this.set();
 };
 
-module.exports = Elapsed;
+module.exports = { Elapsed, l10nFrench };
