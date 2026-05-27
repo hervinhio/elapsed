@@ -36,6 +36,17 @@ var german = {
 	years: ['Jahr', 'e']
 };
 
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+	minutes: ['minute', 's'],
+	hours: ['heure', 's'],
+	days: ['jour', 's'],
+	weeks: ['semaine', 's'],
+	months: ['mois', ''],
+	years: ['an', 's']
+};
+
 var localizedElapsedTime = new Elapsed(then, now, german);
 
 console.log(localizedElapsedTime.milliSeconds.text);
