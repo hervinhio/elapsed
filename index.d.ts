@@ -34,3 +34,15 @@ declare class Elapsed {
     optimal: any;
     refresh(to: any): Elapsed;
 }
+declare namespace Elapsed {
+    export const l10nFrench: {
+        milliSeconds: [string, string];
+        seconds: [string, string];
+        minutes: [string, string];
+        hours: [string, string];
+        days: [string, string];
+        weeks: [string, string];
+        months: [string, string];
+        years: [string, string];
+    };
+}
