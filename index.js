@@ -78,4 +78,16 @@ Elapsed.prototype.refresh = function(to) {
 	return this.set();
 };
 
+var l10nFrench = {
+  milliSeconds: ['milliseconde', 's']
+  , seconds: ['seconde', 's']
+	, minutes: ['minute', 's']
+	, hours: ['heure', 's']
+	, days: ['jour', 's']
+	, weeks: ['semaine', 's']
+	, months: ['mois', '']
+	, years: ['an', 's']
+};
+
 module.exports = Elapsed;
+module.exports.l10nFrench = l10nFrench;
