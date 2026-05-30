@@ -56,6 +56,37 @@ console.log(localizedElapsedTime.years.text);
 
 console.log(localizedElapsedTime.optimal);
 
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+	minutes: ['minute', 's'],
+	hours: ['heure', 's'],
+	days: ['jour', 's'],
+	weeks: ['semaine', 's'],
+	months: ['mois', ''],
+	years: ['an', 's']
+};
+
+var localizedElapsedTimeWithFrench = new Elapsed(then, now, french);
+
+console.log(localizedElapsedTimeWithFrench.milliSeconds.text);
+
+console.log(localizedElapsedTimeWithFrench.seconds.text);
+
+console.log(localizedElapsedTimeWithFrench.minutes.text);
+
+console.log(localizedElapsedTimeWithFrench.hours.text);
+
+console.log(localizedElapsedTimeWithFrench.days.text);
+
+console.log(localizedElapsedTimeWithFrench.weeks.text);
+
+console.log(localizedElapsedTimeWithFrench.months.text);
+
+console.log(localizedElapsedTimeWithFrench.years.text);
+
+console.log(localizedElapsedTimeWithFrench.optimal);
+
 var localizedElapsedTimeWithImplicitNow = new Elapsed(then, german);
 
 console.log(localizedElapsedTimeWithImplicitNow.milliSeconds.text);
