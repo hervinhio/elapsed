@@ -1,4 +1,5 @@
 var Elapsed = require('./');
+var french = require('./').french;
 
 var now = new Date();
 var then = new Date(2012, 03, 15, 15, 22);
@@ -75,3 +76,43 @@ console.log(localizedElapsedTimeWithImplicitNow.months.text);
 console.log(localizedElapsedTimeWithImplicitNow.years.text);
 
 console.log(localizedElapsedTimeWithImplicitNow.optimal);
+
+var frenchLocalized = new Elapsed(then, now, french);
+
+console.log(frenchLocalized.milliSeconds.text);
+
+console.log(frenchLocalized.seconds.text);
+
+console.log(frenchLocalized.minutes.text);
+
+console.log(frenchLocalized.hours.text);
+
+console.log(frenchLocalized.days.text);
+
+console.log(frenchLocalized.weeks.text);
+
+console.log(frenchLocalized.months.text);
+
+console.log(frenchLocalized.years.text);
+
+console.log(frenchLocalized.optimal);
+
+var frenchLocalizedWithImplicitNow = new Elapsed(then, french);
+
+console.log(frenchLocalizedWithImplicitNow.milliSeconds.text);
+
+console.log(frenchLocalizedWithImplicitNow.seconds.text);
+
+console.log(frenchLocalizedWithImplicitNow.minutes.text);
+
+console.log(frenchLocalizedWithImplicitNow.hours.text);
+
+console.log(frenchLocalizedWithImplicitNow.days.text);
+
+console.log(frenchLocalizedWithImplicitNow.weeks.text);
+
+console.log(frenchLocalizedWithImplicitNow.months.text);
+
+console.log(frenchLocalizedWithImplicitNow.years.text);
+
+console.log(frenchLocalizedWithImplicitNow.optimal);
