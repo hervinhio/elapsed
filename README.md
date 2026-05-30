@@ -64,6 +64,17 @@ var i10n = {
 };
 ```
 
+French translations are also available:
+
+``` js
+var Elapsed = require('elapsed');
+var i10n = Elapsed.l10nFrench;
+var elapsedTime = new Elapsed(from, to, i10n);
+
+console.log(elapsedTime.hours.text);  // "552 heures"
+console.log(elapsedTime.optimal);     // "3 semaines"
+```
+
 Each property holds an array containing the singular and the plural-suffix.
 
 If you don't need to specify the `to`-parameter, you can pass in the localization as second parameter:
