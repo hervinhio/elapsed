@@ -56,7 +56,18 @@ console.log(localizedElapsedTime.years.text);
 
 console.log(localizedElapsedTime.optimal);
 
-var localizedElapsedTimeWithImplicitNow = new Elapsed(then, german);
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+	minutes: ['minute', 's'],
+	hours: ['heure', 's'],
+	days: ['jour', 's'],
+	weeks: ['semaine', 's'],
+	months: ['mois', ''],
+	years: ['an', 's']
+};
+
+var localizedElapsedTimeWithImplicitNow = new Elapsed(then, french);
 
 console.log(localizedElapsedTimeWithImplicitNow.milliSeconds.text);
 
