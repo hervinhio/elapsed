@@ -56,6 +56,17 @@ console.log(localizedElapsedTime.years.text);
 
 console.log(localizedElapsedTime.optimal);
 
+var lingala = {
+  milliSeconds: ['milisɛkɔ́ndɛ', ''],
+  seconds: ['sɛkɔ́ndɛ', ''],
+	minutes: ['miníti', ''],
+	hours: ['ngóngá', ''],
+	days: ['mokɔlɔ', ''],
+	weeks: ['mpɔ́sɔ', ''],
+	months: ['sánzá', ''],
+	years: ['mbúla', '']
+};
+
 var localizedElapsedTimeWithImplicitNow = new Elapsed(then, german);
 
 console.log(localizedElapsedTimeWithImplicitNow.milliSeconds.text);
@@ -75,3 +86,23 @@ console.log(localizedElapsedTimeWithImplicitNow.months.text);
 console.log(localizedElapsedTimeWithImplicitNow.years.text);
 
 console.log(localizedElapsedTimeWithImplicitNow.optimal);
+
+var lingalaElapsedTime = new Elapsed(then, now, lingala);
+
+console.log(lingalaElapsedTime.milliSeconds.text);
+
+console.log(lingalaElapsedTime.seconds.text);
+
+console.log(lingalaElapsedTime.minutes.text);
+
+console.log(lingalaElapsedTime.hours.text);
+
+console.log(lingalaElapsedTime.days.text);
+
+console.log(lingalaElapsedTime.weeks.text);
+
+console.log(lingalaElapsedTime.months.text);
+
+console.log(lingalaElapsedTime.years.text);
+
+console.log(lingalaElapsedTime.optimal);
