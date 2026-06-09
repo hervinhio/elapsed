@@ -9,6 +9,17 @@ var l10nDefaults = {
 	, years: ['year', 's']
 };
 
+var l10nLingala = {
+  milliSeconds: ['milisɛkɔ́ndɛ', '']
+  , seconds: ['sɛkɔ́ndɛ', '']
+	, minutes: ['miniti', '']
+	, hours: ['ngonga', '']
+	, days: ['mokɔlɔ', '']
+	, weeks: ['poso', '']
+	, months: ['sanza', '']
+	, years: ['mbula', '']
+};
+
 function Elapsed (from, to, l10n) {
 	this.from = from;
 
@@ -79,3 +90,4 @@ Elapsed.prototype.refresh = function(to) {
 };
 
 module.exports = Elapsed;
+module.exports.l10nLingala = l10nLingala;
