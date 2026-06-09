@@ -1,4 +1,5 @@
 var Elapsed = require('./');
+var l10nFrench = require('./').l10nFrench;
 
 var now = new Date();
 var then = new Date(2012, 03, 15, 15, 22);
@@ -75,3 +76,23 @@ console.log(localizedElapsedTimeWithImplicitNow.months.text);
 console.log(localizedElapsedTimeWithImplicitNow.years.text);
 
 console.log(localizedElapsedTimeWithImplicitNow.optimal);
+
+var frenchElapsedTime = new Elapsed(then, now, l10nFrench);
+
+console.log(frenchElapsedTime.milliSeconds.text);
+
+console.log(frenchElapsedTime.seconds.text);
+
+console.log(frenchElapsedTime.minutes.text);
+
+console.log(frenchElapsedTime.hours.text);
+
+console.log(frenchElapsedTime.days.text);
+
+console.log(frenchElapsedTime.weeks.text);
+
+console.log(frenchElapsedTime.months.text);
+
+console.log(frenchElapsedTime.years.text);
+
+console.log(frenchElapsedTime.optimal);
