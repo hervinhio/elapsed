@@ -66,6 +66,22 @@ var i10n = {
 
 Each property holds an array containing the singular and the plural-suffix.
 
+Here is an example in French:
+
+``` js
+var french = {
+  milliSeconds: ['milliseconde', 's'],
+  seconds: ['seconde', 's'],
+  minutes: ['minute', 's'],
+  hours: ['heure', 's'],
+  days: ['jour', 's'],
+  weeks: ['semaine', 's'],
+  months: ['mois', ''],
+  years: ['an', 's']
+};
+var elapsedTime = new Elapsed(from, to, french);
+```
+
 If you don't need to specify the `to`-parameter, you can pass in the localization as second parameter:
 
 ``` js
